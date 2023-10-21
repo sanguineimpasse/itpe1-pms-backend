@@ -14,10 +14,6 @@ async function configureApp(pool) {
   });
 
   app.set("db", pool);
-  //FIXME:
-  //   !app.get("/", (req, res) => {
-  //     res.send("API Works!");
-  //   });
   getRoutes(app);
 
   app.listen(3000, function () {
