@@ -16,12 +16,8 @@ function updateUser(req, res) {
   DBModel.updatedUser(req, res);
 }
 
-function addPost(req, res) {
-  DBModel.createPost(req, res);
-}
 
 exports.createUser = createUser;
 exports.findAllUsers = findAllUsers;
 exports.findUserID = findUserID;
 exports.updateUser = updateUser;
-exports.addPost = addPost;
