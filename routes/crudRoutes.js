@@ -4,20 +4,26 @@ function createUser(req, res) {
   DBModel.createUsers(req, res);
 }
 
-function findAllUsers(req, res) {
-  DBModel.findAll(res);
+function login(req,res){
+  DBModel.login(req,res)
 }
 
-function findUserID(req, res) {
-  DBModel.findById(req, res);
-}
+// function findAllUsers(req, res) {
+//   DBModel.findAll(res);
+// }
 
-function updateUser(req, res) {
-  DBModel.updatedUser(req, res);
-}
+// function findUserID(req, res) {
+//   DBModel.findById(req, res);
+// }
+
+// function updateUser(req, res) {
+//   DBModel.updatedUser(req, res);
+// }
 
 
 exports.createUser = createUser;
-exports.findAllUsers = findAllUsers;
-exports.findUserID = findUserID;
-exports.updateUser = updateUser;
+exports.login = login;
+
+// exports.findAllUsers = findAllUsers;
+// exports.findUserID = findUserID;
+// exports.updateUser = updateUser;
