@@ -5,7 +5,11 @@ function createUser(req, res) {
 }
 
 function login(req,res){
-  DBModel.login(req,res)
+  DBModel.login(req,res);
+}
+
+function checkUserCode(req,res){
+  DBModel.checkUserCode(req,res);
 }
 
 // function findAllUsers(req, res) {
@@ -23,6 +27,7 @@ function login(req,res){
 
 exports.createUser = createUser;
 exports.login = login;
+exports.checkUserCode = checkUserCode;
 
 // exports.findAllUsers = findAllUsers;
 // exports.findUserID = findUserID;

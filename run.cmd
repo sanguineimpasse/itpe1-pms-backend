@@ -1,3 +1,3 @@
-COLOR 1F
+::COLOR 1F
 cls
 node .
