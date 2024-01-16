@@ -1,20 +1,25 @@
 const {
   createUser,
   checkUserCode,
-  login
+  login,
+  changeUserAccount
 } = require("./crudRoutes");
 
 function getRoutes(app) {
   app.post("/create/user", createUser);
   app.post("/login", login);
   app.post("/verify/usercode", checkUserCode);
+  app.patch("/patch/useraccount", changeUserAccount);
 
   app.get('*', function(req, res){
     res.status(404).send('incorrect route');
     unknownRoute();
-
   });
   app.post('*', function(req, res){
+    res.status(404).send('incorrect route');
+    unknownRoute();
+  });
+  app.patch('*', function(req, res){
     res.status(404).send('incorrect route');
     unknownRoute();
   });

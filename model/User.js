@@ -39,16 +39,15 @@ module.exports = (sequelize) => {
   {
     hooks: {
       beforeCreate: async (user) => {
+        //console.log('before create: ' + user.password);
         user.password = await bcrypt.hash(user.password, 10);
       },
       beforeUpdate: async (user) => {
-        if (user.changed('password')) {
-          user.password = await bcrypt.hash(user.password, 10);
-        }
+        //console.log('before update: ' + user.password);
+        user.password = await bcrypt.hash(user.password, 10);
       },
     },
-  }
-  );
+  });
 
   return User;
 };

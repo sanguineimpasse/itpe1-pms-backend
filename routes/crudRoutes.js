@@ -12,6 +12,10 @@ function checkUserCode(req,res){
   DBModel.checkUserCode(req,res);
 }
 
+function changeUserAccount(req, res){
+  DBModel.changeUserAccount(req,res);
+}
+
 // function findAllUsers(req, res) {
 //   DBModel.findAll(res);
 // }
@@ -28,6 +32,7 @@ function checkUserCode(req,res){
 exports.createUser = createUser;
 exports.login = login;
 exports.checkUserCode = checkUserCode;
+exports.changeUserAccount = changeUserAccount;
 
 // exports.findAllUsers = findAllUsers;
 // exports.findUserID = findUserID;
