@@ -21,6 +21,8 @@
     "mysql": "^2.18.1",
     "mysql2": "^3.6.1",
     "nodemon": "^3.0.1",
-    "sequelize": "^6.33.0"
+    "qrcode": "^1.5.3",
+    "sequelize": "^6.33.0",
+    "speakeasy": "^2.0.0"
   }
 }
